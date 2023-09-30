@@ -1,0 +1,38 @@
+header {
+    height: 40px;
+    width: 100%;
+    background-color: #fafafa;
+    outline: 1px solid #00000013;
+    padding: 15px 20px;
+    min-width: 450px;
+    overflow: hidden;
+}
+
+header > * {
+    position: relative;
+    margin: auto;
+    color: #525252;
+    float: right;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+#logout {
+    color: #acacac;
+    font-size:x-small;
+}
+
+#profile {
+    padding: 0;
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
+    background-color: black;
+
+}
+
+.profile {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}

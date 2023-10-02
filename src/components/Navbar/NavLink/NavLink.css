@@ -1,0 +1,19 @@
+a {
+    padding: 15px 20px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    color: white;
+    font-size: smaller;
+    font-weight: 300;
+    transition: padding 0.3s;
+}
+
+a:hover {
+    background-color: #573c69;
+}
+
+a:active {
+    background-color: #6F4A87;
+}

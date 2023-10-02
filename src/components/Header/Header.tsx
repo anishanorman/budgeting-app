@@ -5,8 +5,8 @@ function Header() {
 	let currentDate = new Date();
 
 	return (
-		<div className="header">
-			<p style={{ float: "left" }}>{formatDate(currentDate)}</p>
+		<header>
+			<p className="date" style={{ float: "left" }}>{formatDate(currentDate)}</p>
 			<div className="profile">
 				<div id="info">
 					<p>Hi, Anisha!</p>
@@ -14,7 +14,7 @@ function Header() {
 				</div>
 				<div id="profile" />
 			</div>
-		</div>
+		</header>
 	);
 }
 

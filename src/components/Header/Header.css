@@ -1,23 +1,20 @@
-.header {
-    height: 20px;
+header {
+    height: 40px;
     width: 100%;
     background-color: #fafafa;
     outline: 1px solid #00000013;
-    padding: 20px;
+    padding: 5px;
     min-width: 450px;
+    overflow: hidden;
 }
 
-.header > * {
+header > * {
     position: relative;
     margin: auto;
     color: #525252;
     float: right;
     top: 50%;
     transform: translateY(-50%);
-}
-
-#info {
-
 }
 
 #logout {
@@ -28,8 +25,8 @@
 #profile {
     padding: 0;
     border-radius: 50%;
-    height: 40px;
-    width: 40px;
+    height: 30px;
+    width: 30px;
     background-color: black;
 
 }
@@ -38,4 +35,8 @@
     display: flex;
     gap: 15px;
     align-items: center;
+}
+
+.date {
+    margin-left: 10px;
 }

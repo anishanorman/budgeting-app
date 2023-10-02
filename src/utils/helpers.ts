@@ -1,7 +1,6 @@
-export function formatDate(date: any) {
+import { dayNames, monthNames } from "./consts"
 
-    const dayNames = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"]
-    const monthNames = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"]
+export function formatDate(date: any) {
 
     function getSuffix(date: Number) {
         if (date === 1 || date === 21 || date === 31) {

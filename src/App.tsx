@@ -1,4 +1,5 @@
 import React, { useState } from "react"
+import { Outlet } from "react-router-dom"
 import "./App.css"
 import Navbar from "./components/Navbar/Navbar"
 import Header from "./components/Header/Header"
@@ -19,6 +20,7 @@ function App() {
       <Navbar open={navOpen} handleMenuBtnClick={handleMenuBtnClick} style={layout.nav}/>
       <main style={layout.main}>
         <Header />
+        <Outlet />
       </main>
     </div>
   )

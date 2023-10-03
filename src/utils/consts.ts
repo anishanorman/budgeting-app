@@ -8,12 +8,17 @@ export const appStyles = {
           width: "200px",
         },
         link: {
-          a: {
+          link: {
             padding: "15px 20px",
           },
           label: {
-
-          }
+            transition: "opacity 0.3s"
+          },
+          highlight: {
+            borderLeft: "5px solid white",
+            backgroundColor: "#5c426b",
+            transition: "all 0.1s",
+          },
         }
       }
     },
@@ -26,13 +31,18 @@ export const appStyles = {
           width: "50px"
         },
         link: {
-          a: {
+          link: {
             padding: "10px 13px",
           },
           label: {
-            width: 0,
-            opacity: 0
-          }
+            opacity: 0,
+            transition: "opacity 0.3s"
+          },
+          highlight: {
+            borderLeft: "5px solid white",
+            backgroundColor: "#5c426b",
+            transition: "all 0.1s",
+          },
         }
       }
     },

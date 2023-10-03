@@ -12,4 +12,13 @@
 
 main {
   transition: 0.5s;
+  height: 100%;
+}
+
+.content {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items:center;
 }

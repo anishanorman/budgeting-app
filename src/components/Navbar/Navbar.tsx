@@ -8,13 +8,13 @@ interface NavbarProps {
 	style: {
 		nav: CSSProperties;
 		link: {
-			a: CSSProperties;
+			link: CSSProperties;
 			label: CSSProperties;
 		};
 	};
 }
 
-const Navbar: FC<NavbarProps> = ({ open, handleMenuBtnClick, style }) => {
+const Navbar: FC<NavbarProps> = ({ handleMenuBtnClick, style, open }) => {
 	return (
 		<nav style={style.nav}>
 			<button className="menuBtn" onClick={handleMenuBtnClick}>
@@ -22,41 +22,38 @@ const Navbar: FC<NavbarProps> = ({ open, handleMenuBtnClick, style }) => {
 			</button>
 
 			<div className="logo" />
-			<hr className="divider" />
 			<div className="links">
 				<div className="pages">
-					<NavLink label="Home" href="" icon="home" style={style.link} />
+					<NavLink label="Dashboard" href="/" icon="home" style={style.link} open={open}/>
 					<NavLink
-						label="Placeholder"
-						href=""
-						icon="credit_card"
-						style={style.link}
-					/>
-					<NavLink
-						label="Placeholder"
-						href=""
-						icon="shopping_bag"
-						style={style.link}
-					/>
-					<NavLink
-						label="Placeholder"
-						href=""
+						label="Budget"
+						href="/budget"
 						icon="payments"
 						style={style.link}
+						open={open}
 					/>
 					<NavLink
-						label="Placeholder"
-						href=""
-						icon="pie_chart"
+						label="Spending"
+						href="/spending"
+						icon="shopping_bag"
 						style={style.link}
+						open={open}
+					/>
+					<NavLink
+						label="History"
+						href="/history"
+						icon="History"
+						style={style.link}
+						open={open}
 					/>
 				</div>
-				<div className="divider" />
 				<NavLink
-					label="Placeholder"
-					href=""
+					label="Settings"
+					href="/settings"
 					icon="settings"
 					style={style.link}
+					className="border-top"
+					open
 				/>
 			</div>
 		</nav>

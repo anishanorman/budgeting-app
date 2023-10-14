@@ -7,32 +7,34 @@ nav {
     position: fixed;
     top: 0;
     left: 0;
-    padding-top: 30px;
     color: white;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
 }
 
 .logo {
     margin: 20px auto;
     width: 80%;
-    aspect-ratio: 1;
+    aspect-ratio: 2.5;
     background-color: black;
+    margin-top: 54px;
 }
 
 .links {
     display: flex;
     flex-direction: column;
     width: 100%;
+    height: 100%;
     justify-content: space-between;
-
 }
 
 .menuBtn {
     all: unset;
     color: white;
     position: absolute;
-    top: 0;
+    top: 15px;
     right: 15px;
-    font-size: 36px;
 }
 
 .divider {
